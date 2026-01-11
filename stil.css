@@ -1,29 +1,62 @@
+/* GENEL AYARLAR */
 html, body {
   margin: 0;
   padding: 0;
-  background: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
+  background: #0f172a;          /* koyu lacivert */
+  color: #e5e7eb;               /* yumuşak beyaz */
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+/* MENÜ */
 .menu {
   display: flex;
   justify-content: center;
-  background: #222;
-  padding: 10px;
+  align-items: center;
+  background: #020617;          /* daha koyu */
+  padding: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
 .menu a {
-  color: white;
+  color: #e5e7eb;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 18px;
+  font-size: 16px;
+  position: relative;
 }
 
-.menu a:hover {
-  text-decoration: underline;
+/* MENÜ ALT ÇİZGİ ANİMASYONU */
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
 }
 
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* İÇERİK */
 .container {
+  max-width: 900px;
+  margin: 80px auto;
   text-align: center;
-  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f8fafc;
+}
+
+.container p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cbd5f5;
 }
