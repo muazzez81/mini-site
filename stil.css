@@ -60,3 +60,11 @@ html, body {
   line-height: 1.7;
   color: #cbd5f5;
 }
+/* KART TASARIMI */
+.container {
+  background: #020617;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
