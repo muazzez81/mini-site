@@ -72,4 +72,51 @@ audio {
   margin-top: 20px;
 }
 
+/* RADYO ALANI */
+.radio-alani {
+  margin-top: 40px;
+}
+
+/* CANLI YAZISI */
+.canli {
+  color: #f87171;
+  font-weight: bold;
+  margin-bottom: 15px;
+  animation: yanip-sonme 1.2s infinite;
+}
+
+/* YANIP SÖNME ANİMASYONU */
+@keyframes yanip-sonme {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* RADYO BUTONU */
+.radio-btn {
+  display: inline-block;
+  padding: 16px 34px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  border-radius: 40px;
+  box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER ANİMASYON */
+.radio-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(56,189,248,0.6);
+}
+
+/* YAYIN SAATİ */
+.yayinsaati {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
 
